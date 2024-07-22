@@ -149,8 +149,8 @@ body{
   font-size: 16px;
   margin-top: 5%;
   border-radius: 25px;
-  height: 40px;
-  width: 70%;
+  min-height: 40px;
+  min-width: 70%;
 }
 #main > #calculator > #form > #button > button:hover{
   background-color: hsl(61, 100%, 54%);
