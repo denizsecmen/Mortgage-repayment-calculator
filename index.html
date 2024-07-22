@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Frontend Mentor | Mortgage repayment calculator</title>
+  </head>
+  <body>
+    <div id="main">
+      <div id="calculator">
+        <div id="form">
+          <div id="amount">
+            <div>Mortage Amount</div>
+            <div id="mortageblock">
+              <div id="icon"><div>£</div></div>
+              <input id="value" />
+            </div>
+          </div>
+          <div id="multiple-input">
+            <div id="year-block">
+              <div class="title">Mortage Term</div>
+              <div id="yearinput">
+                <input id="year" />
+                <div><div>years</div></div>
+              </div>
+            </div>
+            <div id="percent-block">
+              <div class="title">Interest Rate</div>
+              <div id="yearper">
+                <input id="percent" />
+                <div><div>%</div></div>
+              </div>
+            </div>
+          </div>
+          <div id="radiobutton">
+            <div id="title">Mortage Type</div>
+            <div id="repayment" class="radio">
+              <input type="radio" name="target" />
+              <span>Repayment</span>
+            </div>
+            <div id="interest-only" class="radio">
+              <input type="radio" name="target" title="Interest Only" />
+              <span>Interest Only</span>
+            </div>
+            <div style="display: none; color: red"></div>
+          </div>
+          <div id="button">
+            <button>
+              <img src="./assets/images/icon-calculator.svg" />Calculate
+              Repayments
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="result-screen">
+        <div id="empty">
+          <img src="./assets/images/illustration-empty.svg" />
+          <div id="title">Results shown here</div>
+          <div id="text">
+            Complete the form and click “calculate repayments” to see what your
+            monthly repayments would be.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
