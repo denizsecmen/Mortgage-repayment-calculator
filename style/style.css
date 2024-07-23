@@ -17,7 +17,7 @@
  #result-screen{
   background-color:  hsl(202, 55%, 16%);
   width: 100%!important;
-  min-height: 50%!important;  
+  min-height: 40%!important;  
   border-radius: 10px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 30px;
@@ -33,7 +33,6 @@
   height: 100%!important;
   padding: 2%;
   display: flex;  
-  justify-content: space-around!important;
 }
 #main > #calculator > #form > #button > button{
   margin-bottom: 15px;
@@ -41,14 +40,16 @@
 #main > #calculator > #form {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
 }
 #main>#calculator>#form>#multiple-input{
   width: 100%!important;
-  height: 40%;
+  height: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column!important;
 }
+
 #main>#calculator>#form>#multiple-input>#year-block{
   width: 100%!important;
   overflow: hidden;
