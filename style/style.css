@@ -222,7 +222,7 @@ body{
   cursor: pointer;
 }
 #result-screen{
-  background-color:  hsl(202, 55%, 16%);
+  background-color:  hsl(200, 24%, 40%);
   width: 50%;
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -254,4 +254,26 @@ body{
   align-items: center;
   width: 60%;
   height: 60%!important;
+}
+#calculation-result{
+  background-color:  hsl(201, 45%, 22%);;
+  width: 50%;
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  padding-left:5%;
+  padding-top: 5%;
+  padding-right: 5%;
+}
+#calculation-result>#title{
+  font-size: 21px;
+}
+#calculation-result>#table{
+  width: 100%;
+  height: 60%;
+  background-color: hsl(202, 55%, 16%);
+  margin-top: 15px;
+  border-top: 10px solid hsl(61, 70%, 52%);
+  border-radius: 10px;
 }
