@@ -7,6 +7,7 @@ let radioSelection = document.querySelectorAll(".radio");
 let amountError = document.querySelector("#amountError");
 let yearError = document.querySelector("#yearError");
 let perError = document.querySelector("#perError");
+let clear = document.querySelector("#clear");
 let radioSelectionError = document.querySelector("#radioSelectionError");
 for (let i = 0; i < radioSelection.length; i++){
   radioSelection[i].addEventListener('click', function(){
@@ -14,6 +15,15 @@ for (let i = 0; i < radioSelection.length; i++){
     selected.checked = true;
   });
 }
+clear.addEventListener('click', () => {
+  amount.value = "";
+  yearInput.value = "";
+  percent.value = "";
+  selected.value = "";
+  for (let i = 0; i < radioSelection.length; i++) {
+    selected.checked = false;
+  }
+});
 button.addEventListener('click', () => {
   if (!amount.value) {
     amountError.style.display = "block";

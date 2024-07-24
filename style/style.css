@@ -277,3 +277,7 @@ body{
   border-top: 10px solid hsl(61, 70%, 52%);
   border-radius: 10px;
 }
+#calculation-result>#table>#result{
+  color: hsl(61, 70%, 52%);
+  font-size: 21px;
+}
