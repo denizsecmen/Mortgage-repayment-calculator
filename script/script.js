@@ -7,6 +7,7 @@ let radioSelection = document.querySelectorAll(".radio");
 let amountError = document.querySelector("#amountError");
 let yearError = document.querySelector("#yearError");
 let perError = document.querySelector("#perError");
+let total = document.querySelector("#repay");
 let radioSelectionError = document.querySelector("#radioSelectionError");
 let clear = document.querySelector("#clear");
 let resultValue = document.querySelector("#result");
@@ -58,16 +59,20 @@ button.addEventListener('click', () => {
   }
   try {
     let mAmount = parseInt(amount.value);
-    let yInput = parseInt(yearInput.value)*12;
+    let mInput = parseInt(yearInput.value)*12;
     let perc = parseFloat(percent.value) / (100 * 12);
-    let repayment = parseFloat((mAmount * yInput) / (1 - Math.pow(1 + perc, -perc))).toFixed(2);
+    let repayment = parseFloat((mAmount * perc) / (1 - Math.pow(1 + perc, -mInput))).toFixed(2);
+    if (isNaN(repayment))
+    {
+      throw new Error("Please enter numerical values to inputs.");
+    }
     console.log(repayment);
     resultValue.innerHTML = repayment.toString();
+    total.innerHTML = repayment * mInput;
     entranceScreen.style.display = "none";
     resultScreen.style.display = "block";
-    alert("Hello");
   }
   catch (e) {
-    console.log(e);
+    alert(e.message);
   }
 });

@@ -53,7 +53,18 @@
   display: flex;
   flex-direction: column!important;
 }
-
+#calculation-result{
+  background-color:  hsl(201, 45%, 22%);;
+  width: 90%!important;
+  min-height: 50%;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px!important;
+  color: hsl(0, 0%, 100%);
+  padding-left:5%;
+  padding-top: 5%;
+  padding-right: 5%;
+  overflow: hidden;
+}
 #main>#calculator>#form>#multiple-input>#year-block{
   width: 100%!important;
   overflow: hidden;
@@ -222,7 +233,7 @@ body{
   cursor: pointer;
 }
 #result-screen{
-  background-color:  hsl(200, 24%, 40%);
+  background-color:   hsl(202, 55%, 16%);
   width: 50%;
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -258,6 +269,7 @@ body{
 #calculation-result{
   background-color:  hsl(201, 45%, 22%);;
   width: 50%;
+  min-height: 60%;
   border-radius: 10px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 30px;
@@ -268,16 +280,21 @@ body{
 }
 #calculation-result>#title{
   font-size: 21px;
+  margin-top: 10px;
 }
 #calculation-result>#table{
   width: 100%;
-  height: 60%;
   background-color: hsl(202, 55%, 16%);
   margin-top: 15px;
+  height: 40%;
   border-top: 10px solid hsl(61, 70%, 52%);
   border-radius: 10px;
+  padding-left: 10px;
+  padding-top: 15px;
 }
 #calculation-result>#table>#result{
   color: hsl(61, 70%, 52%);
-  font-size: 21px;
+  font-size: 45px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
